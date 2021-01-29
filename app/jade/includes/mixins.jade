@@ -1,0 +1,26 @@
+mixin cHeader(text)
+	.forum-category-header
+		a.forum-category-header-link(href="javascript:void(0)" title='#{text}') 
+			span #{text}
+			i.header-ico.fa.fa-angle-right
+
+mixin fThread-item(text, msg, time)
+	li.forum-thread-item
+		a.forum-thread-link #{text}
+		a.forum-thread-msg 
+			span #{msg}
+			i.forum-thread-msg-ico.fa.fa-comments
+		.time.forum-thread-time #{time}
+
+mixin fContent-item(text, author, className, time)
+	li.content-item
+		a.content-title(href="javascript:void(0)") #{text}
+		.content-footer
+			a.content-author(href="javascript:void(0)") #{author}
+			span.membership(class="#{className}")
+			.time.content-time #{time}
+
+mixin fTips-item(select, className, text)
+	li.tips-item(class="#{select}")
+		i.fa(class="#{className}")
+		span #{text}

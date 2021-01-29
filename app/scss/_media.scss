@@ -1,0 +1,64 @@
+@import "bourbon";
+@import "variables";
+
+/*==========  Mobile First  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    .forum-thread-link {
+        width: 80%;
+    }
+    .forum-thread-msg {
+        width: 20%;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .main {
+        padding: 30px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 960px) {
+    .layout-two-column-first_0 {
+        width: 70%;
+        padding: 15px 8px;
+    }
+    .layout-two-column-second_0 {
+        width: 30%;
+        padding: 15px 8px;
+    }
+    .forum-thread-link {
+        width: 78%;
+    }
+    .forum-thread-msg {
+        order: 1;
+        width: 10%;
+    }
+    .forum-thread-time {
+        width: 12%;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
